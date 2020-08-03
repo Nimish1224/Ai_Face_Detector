@@ -16,7 +16,7 @@ We’ll create a new Jupyter notebook / python file and start off with :
 ## I. Cascade Classifiers
    Let's explore Cascade Classifiers.
    
-   <b>Theory:-</b>
+   <b>Theory :-</b>
      Cascade classifier, or namely cascade of boosted classifiers working with haar-like features, is a special case of ensemble learning, called boosting. It typically              relies on   Adaboost classifiers (and other models such as Real Adaboost, Gentle Adaboost or Logitboost).
      Cascade classifiers are trained on a few hundred sample images of image that contain the object we want to detect, and other images that do not contain those images.
 
@@ -27,5 +27,5 @@ We’ll create a new Jupyter notebook / python file and start off with :
   <li>Adaboost Training</li>
   <li>Cascading Classifiers</li></ul>
   
-The original [https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf](paper) was published in 2001.
+The original [paper](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf) was published in 2001.
 
