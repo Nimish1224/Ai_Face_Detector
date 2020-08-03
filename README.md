@@ -29,7 +29,8 @@ We’ll create a new Jupyter notebook / python file and start off with :
   
 The original [paper](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf) was published in 2001.
 
-a. Haar Feature Selection
+<b> Haar Feature Selection</b>
+
 There are some common features that we find on most common human faces :
 
 <ul><li>a dark eye region compared to upper-cheeks</li>
