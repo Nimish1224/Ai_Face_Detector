@@ -7,6 +7,7 @@ from random import randrange
 
 # Load some pretrained data on face frontals from opencv (harr cascade algorithm)
 Train_face_data =cv2.CascadeClassifier('C:/Users/nimis/Desktop/Face Detector/haarcascade_frontalface_default.xml')
+
 # After declearing variable you'll have to load that file
 Train_face_data.load('haarcascade_frontalface_default.xml')
 
@@ -71,6 +72,9 @@ webcamp.release()
 
 
 # print(face_coordinates)
+
 # cv2.imshow('FAce DEtrctor',img)
+
 # cv2.waitKey()
+
 # print("Code Completed")
