@@ -13,20 +13,19 @@ We’ll create a new Jupyter notebook / python file and start off with :
 
 <img src="https://github.com/Nimish1224/Ai_Face_Detector/blob/master/readme-src/import.PNG">
 
-I. Cascade Classifiers
-  Let's explore Cascade Classifiers.
+## I. Cascade Classifiers
+   Let's explore Cascade Classifiers.
+   
+   <b>Theory:-</b>
+     Cascade classifier, or namely cascade of boosted classifiers working with haar-like features, is a special case of ensemble learning, called boosting. It typically              relies on   Adaboost classifiers (and other models such as Real Adaboost, Gentle Adaboost or Logitboost).
+     Cascade classifiers are trained on a few hundred sample images of image that contain the object we want to detect, and other images that do not contain those images.
 
-  1. Theory
-  Cascade classifier, or namely cascade of boosted classifiers working with haar-like features, is a special case of ensemble learning, called boosting. It typically relies on   Adaboost classifiers (and other models such as Real Adaboost, Gentle Adaboost or Logitboost).
-
-  Cascade classifiers are trained on a few hundred sample images of image that contain the object we want to detect, and other images that do not contain those images.
-
-  How can we detect if a face is there or not ? There is an algorithm, called Viola–Jones object detection framework, that includes all the steps required for live face     d     detection :
+   How can we detect if a face is there or not ? There is an algorithm, called Viola–Jones object detection framework, that includes all the steps required for live face          detection :
 
   <ul><h3>Haar Feature Selection, features derived from Haar wavelets</h3>
   <li>Create integral image</li>
   <li>Adaboost Training</li>
   <li>Cascading Classifiers</li></ul>
   
-The original paper was published in 2001.
+The original [https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf](paper) was published in 2001.
 
