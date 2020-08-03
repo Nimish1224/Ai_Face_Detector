@@ -22,10 +22,18 @@ We’ll create a new Jupyter notebook / python file and start off with :
 
    How can we detect if a face is there or not ? There is an algorithm, called Viola–Jones object detection framework, that includes all the steps required for live face          detection :
 
-  <ul><h3>Haar Feature Selection, features derived from Haar wavelets</h3>
+  <ul><li>Haar Feature Selection, features derived from Haar wavelets</li>
   <li>Create integral image</li>
   <li>Adaboost Training</li>
   <li>Cascading Classifiers</li></ul>
   
 The original [paper](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf) was published in 2001.
+
+a. Haar Feature Selection
+There are some common features that we find on most common human faces :
+
+<ul><li>a dark eye region compared to upper-cheeks</li>
+<li>a bright nose bridge region compared to the eyes</li>
+<li>some specific location of eyes, mouth, nose.</li></ul>
+The characteristics are called Haar Features. The feature extraction process will look like this :
 
