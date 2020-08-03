@@ -11,8 +11,6 @@ Train_face_data =cv2.CascadeClassifier('C:/Users/nimis/Desktop/Face Detector/haa
 # After declearing variable you'll have to load that file
 Train_face_data.load('haarcascade_frontalface_default.xml')
 
-
-
 # To capture video from webcamp
 webcamp = cv2.VideoCapture(0)
 
