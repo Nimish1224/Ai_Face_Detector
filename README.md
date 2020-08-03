@@ -4,4 +4,11 @@
 Facial recognition combined with a biometric fingerprint is useful for access control and prohibition of entry for unintended persons.</b>
 ## Requirements
 The first step is to install OpenCV. Run the following command line in your terminal :
+
 <img src="https://github.com/Nimish1224/Ai_Face_Detector/blob/master/readme-src/cv.PNG">
+
+## Imports and models path
+We’ll create a new Jupyter notebook / python file and start off with :
+
+<img src="https://github.com/Nimish1224/Ai_Face_Detector/blob/master/readme-src/import.PNG">
+
