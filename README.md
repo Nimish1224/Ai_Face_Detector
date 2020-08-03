@@ -29,12 +29,35 @@ We’ll create a new Jupyter notebook / python file and start off with :
   
 The original [paper](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf) was published in 2001.
 
-<b> Haar Feature Selection</b>
+### Haar Feature Selection
 
 There are some common features that we find on most common human faces :
-
 <ul><li>a dark eye region compared to upper-cheeks</li>
 <li>a bright nose bridge region compared to the eyes</li>
 <li>some specific location of eyes, mouth, nose.</li></ul>
 The characteristics are called Haar Features. The feature extraction process will look like this :
+
+<img src="https://github.com/Nimish1224/Ai_Face_Detector/blob/master/readme-src/haar.jpg">
+
+
+n this example, the first feature measures the difference in intensity between the region of the eyes and a region across the upper cheeks. The feature value is simply computed by summing the pixels in the black area and subtracting the pixels in the white area.
+
+Then, we apply this rectangle as a convolutional kernel, over our whole image. In order to be exhaustive, we should apply all possible dimensions and positions of each kernel. A simple 24*24 images would typically result in over 160’000 features, each made of a sum/subtraction of pixels values. It would computationally be impossible for live face detection. So, how do we speed up this process ?
+
+<ul><li>once the good region has been identified by a rectangle, it is useless to run the window over a completely different region of the image. This can be achieved by Adaboost.</li>
+<li>compute the rectangle features using the integral image principle, which is way faster. We’ll cover this in the next section.</li></ul>
+
+<img src="https://github.com/Nimish1224/Ai_Face_Detector/blob/master/readme-src/haar_selection.jpg">
+
+There are several types of rectangles that can be applied for Haar Features extraction. According to the original paper :
+
+<ul><li>the two-rectangle feature is the difference between the sum of the pixels within two rectangular regions, used mainly for detecting edges (a,b)</li>
+<li>the three-rectangle feature computes the sum within two outside rectangles subtracted from the sum in a center rectangle, used mainly for detecting lines (c,d)</li>
+<li>the four-rectangle feature computes the difference between diagonal pairs of rectangle (e)</li></ul>
+
+<img src="https://github.com/Nimish1224/Ai_Face_Detector/blob/master/readme-src/haar_rectangles.jpg">
+
+
+Now that the features have been selected, we apply them on the set of training images using Adaboost classification, that combines a set of weak classifiers to create an accurate ensemble model. With 200 features (instead of 160’000 initially), an accuracy of 95% is acheived. The authors of the paper have selected 6’000 features.
+
 
