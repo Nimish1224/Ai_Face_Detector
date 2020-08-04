@@ -61,5 +61,6 @@ There are several types of rectangles that can be applied for Haar Features extr
 Now that the features have been selected, we apply them on the set of training images using Adaboost classification, that combines a set of weak classifiers to create an accurate ensemble model. With 200 features (instead of 160’000 initially), an accuracy of 95% is acheived. The authors of the paper have selected 6’000 features.
 
 <h1 style="color:blue;text-align:center;">Made with Python</h1>
+                            Crafted with <i class="fa fa-heart" style="color: red"></i> in calgary by  <a href="">NIMISH..1</a>
 
 
