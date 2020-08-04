@@ -58,7 +58,7 @@ There are several types of rectangles that can be applied for Haar Features extr
 <img src="https://github.com/Nimish1224/Ai_Face_Detector/blob/master/readme-src/haar_rectangles.jpg">
 
 
-Now that the features have been selected, we apply them on the set of training images using Adaboost classification, that combines a set of weak classifiers to create an accurate ensemble model. With 200 features (instead of 160’000 initially), an accuracy of 95% is acheived. The authors of the paper have selected 6’000 features.
+Now that the features have been selected, we apply them on the set of training images using Adaboost classification, that combines a set of weak classifiers to create an accurate ensemble model. With 200 features (instead of 160’000 initially), an accuracy of 95% is acheived. The authors of the paper have selected 6’000 feature.
 
 <h2> Crafted 💖 with 🐍 Python 🐍</h2>
 
